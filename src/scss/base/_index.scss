@@ -1,0 +1,6 @@
+//El forward apunta a los demas archivos dentro de la misma carpeta, esto solo se hace en los index
+@forward 'normalize';
+@forward 'variables';
+@forward 'mixins';
+@forward 'globales';
+@forward 'tipografia';

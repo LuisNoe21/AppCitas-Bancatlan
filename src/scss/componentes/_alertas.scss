@@ -1,0 +1,85 @@
+// @use 'base/variables' as v;
+
+// .alerta {
+//     padding: 1rem 1rem 1rem 2rem;
+//     text-transform: uppercase;
+//     font-weight: 900;
+//     margin: 1rem 0;
+//     font-size: 1.2rem;
+//     max-width: 80rem;
+
+//     &.error {
+//         background-color: lighten(v.$rojo, 40%);
+//         border-left: .5rem solid v.$rojo;
+//         color: v.$rojo;
+//     }
+//     &.exito {
+//         background-color: lighten(v.$verde, 60%);
+//         border-left: .5rem solid v.$verde;
+//         color: v.$verde;
+//     }
+// }
+
+
+@use 'base/variables' as v;
+
+.alerta{
+padding: calc(v.$separacion / 5);
+color: v.$blanco;
+width: 100%;
+display: block;
+margin-bottom: 1.5rem;
+
+
+&.error{ // el asperson da a entender que si esta presente dicha clase se ejecutara este codigo
+    background-color: lighten(v.$rojo, 40%);
+    border-left: .5rem solid v.$rojo;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    color: v.$rojo;
+
+
+
+
+    
+}
+// &.exito{ 
+//     background-color: lighten(v.$verde, 3%);
+//     border-left: .5rem solid v.$verde;
+//     text-align: center;
+//     font-weight: v.$bold;
+//     text-transform: uppercase;
+
+    
+// }
+
+&.notificacion{ 
+    background-color: lighten($color: v.$verde2, $amount: 50%);
+    border-left: .5rem solid v.$verde2;
+    color: v.$verde2;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+
+    
+}
+
+
+
+&.exito{ 
+    
+        background-color: lighten($color: v.$verde2, $amount: 50%);
+        border-left: .5rem solid v.$verde2;
+        color: v.$verde2;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: v.$bold;
+        text-transform: uppercase;
+
+    
+}
+}
+
+

@@ -1,0 +1,26 @@
+{
+    "name": "luis_noe_rodriguez/app-citas",
+    "description": "Proyecto Citas PHP8, MVC,MYSQL,SASS, GULP",
+    "type": "project",
+
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\": "./clases"
+        }
+    },
+    "authors": [
+        {
+            "name": "LuisNoe21",
+            "email": "luisnoe.rodriguez09@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^205.0"
+    }
+}
